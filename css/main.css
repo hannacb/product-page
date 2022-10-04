@@ -53,6 +53,18 @@ header img {
   width: 200px;
 }
 
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.wooden {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 3;
+}
+
 footer {
   text-align: center;
 }

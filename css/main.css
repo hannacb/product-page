@@ -69,21 +69,18 @@ header img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
 }
-.text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.text a {
+.cart a {
   background-color: green;
   align-content: center;
   border-radius: 3px solid;
-
-
+  grid-column: 3;
 }
 
+.cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 footer {
   text-align: center;
 }

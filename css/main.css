@@ -65,6 +65,25 @@ header img {
   grid-row: 1 / span 3;
 }
 
+.money-tree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text a {
+  background-color: green;
+  align-content: center;
+  border-radius: 3px solid;
+
+
+}
+
 footer {
   text-align: center;
 }

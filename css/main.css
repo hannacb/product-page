@@ -105,14 +105,33 @@ header img {
   border-color: #224229;
   margin-top: 10px;
   padding: 1.5rem;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .small-description h2 {
   grid-row: 1;
   grid-column: 1 / span 2;
 }
+
+figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
 }
+
+figure img {
+  grid-row: 1;
+  padding: 0 1.5rem;
+  object-fit: cover;
+}
+
+figcaption {
+  grid-row: 2;
+  padding: 0 1.5rem;
+  font-size:12px;
+}
+
 footer {
   text-align: center;
 }

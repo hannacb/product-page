@@ -67,10 +67,13 @@ header img {
 }
 
 .money-tree {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 1.5rem;
 }
+
 .cart a {
   background-color:#224229;
   align-content: center;
@@ -94,7 +97,7 @@ header img {
 .small-description {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
   margin: 0 auto;
   border-width: 10px;
   border-style: solid;
@@ -109,6 +112,13 @@ header img {
   grid-column: 1 / span 2;
 }
 
+.small-description h3 {
+  grid-column: 1;
+}
+
+.paragraphs {
+  grid-column: 1 / span 2;
+}
 .cards {
   display: flex;
   gap: 1.5rem;
@@ -156,12 +166,23 @@ footer {
 }
 
 @media only screen and (min-width:768px){
+
+body {
+  max-width:768px;
+}
 .photos {
-grid-template-columns: 2fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 4fr 1fr;
+grid-template-rows: .5fr .5fr .5fr;
+padding-right: 1.5rem;
 }
 
 .wooden {
   grid-column: 1;
-  grid-row: 1 / span 3:
+  grid-row: 1 / span 3;
+  width: 95%;
+}
+.money-tree {
+
+}
+
 }

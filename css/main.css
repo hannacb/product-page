@@ -86,6 +86,7 @@ header img {
   text-decoration: none;
   font-size: 20px;
   color: #fff;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -95,25 +96,34 @@ header img {
 }
 
 .small-description {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
-  margin: 0 auto;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #224229;
-  margin-top: 10px;
-  padding: 1.5rem;
-  font-size: 15px;
+    border: 10px solid #224229; /* px are fine to be used for borders */
+    padding: 1.5em;
 }
 
-.small-description h2 {
-  grid-row: 1;
-  grid-column: 1 / span 2;
+.small-description dl {
+    display: flex;
+    flex-direction: column;
+}
+.small-description dl dt{
+    font-weight: bold;
 }
 
-.small-description h3 {
-  grid-column: 1;
+.small-description dl dd{
+  margin-left: 0;
+}
+
+
+@media only screen and (min-width: 48em){
+
+    .small-description dl {
+        flex-direction: row;
+     }
+
+    .small-description dl div:last-child {
+        width: 50%;
+        margin-left: auto;
+     }
+
 }
 
 .paragraphs {
@@ -121,7 +131,6 @@ header img {
 }
 .cards {
   display: flex;
-  flex-direction: column;
   gap: 1.5rem;
   margin: 0 auto;
   justify-content: space-between;
@@ -142,8 +151,12 @@ figure {
   grid-template-rows: 1fr .2fr;
   margin: 0 auto;
   gap: .25rem;
+  padding-left: 1rem;
 }
 
+h3 {
+  padding-left: 1.5rem;
+}
 figure img {
   grid-row: 1;
   object-fit: contain;
@@ -161,6 +174,7 @@ figcaption {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-left: 1rem;
 }
 
 footer {

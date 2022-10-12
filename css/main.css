@@ -199,8 +199,8 @@ footer {
   }
   .small-description{
     display: grid;
-    grid-template-columns: 2fr  1fr;
-    grid-template-rows: 40px 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 40px 2fr;
     border: 0;
   }
   .small-description h2 {
@@ -216,7 +216,11 @@ footer {
 
   }
   dl {
-    display: block;
+  flex-direction: column;
   }
+  .cards{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
 }
 }

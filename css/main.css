@@ -231,4 +231,17 @@ footer {
     background-color: #fff;
     color: #000;
   }
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 1fr 40px;
+}
+.reviews h3 {
+  grid-row: 1;
+  grid-column: 1 / span 3;
+}
+.reviews cite {
+  grid-row: 3;
+}
 }

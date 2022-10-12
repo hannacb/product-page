@@ -223,4 +223,12 @@ footer {
     grid-template-columns: 2fr 1fr;
     margin: 0 auto;
 }
+  .details {
+    background-color: #fff;
+    color: #000;
+  }
+  .included {
+    background-color: #fff;
+    color: #000;
+  }
 }

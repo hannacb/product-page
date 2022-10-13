@@ -104,6 +104,7 @@ header img {
 .small-description dl {
   display: flex;
   flex-direction: column;
+  gap:1.5rem;
 }
 .small-description dl dt{
   font-weight: bold;
@@ -113,19 +114,6 @@ header img {
   margin-left: 0;
 }
 
-
-@media only screen and (min-width: 48em){
-
-  .small-description dl {
-    flex-direction: row;
-  }
-
-  .small-description dl div:last-child {
-    width: 50%;
-    margin-left: auto;
-  }
-
-}
 
 .paragraphs {
   grid-column: 1 / span 2;
@@ -182,7 +170,7 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:48em){
 
   body {
     max-width:768px;
@@ -208,19 +196,19 @@ footer {
   .small-description h2 {
     grid-row: 1;
   }
+  .botanical {
+    grid-row: 1;
+    grid-column:2;
+  }
+  .common {
+    grid-row:2;
+    grid-column:2;
+    }
+  }
   .paragraphs {
     grid-column: 1;
     grid-row: 2;
   }
-  .small-description .botanical{
-    grid-row: 1;
-  }
-  .small-description .common{
-    grid-row: 2;
-    grid-column: 2;
-    padding: 1.5rem;
-  }
-
 
   .cards{
     display: grid;
@@ -268,7 +256,7 @@ footer {
     grid-row: 2;
   }
 }
-@media only screen and (min-width:1280px){
+@media only screen and (min-width:80em){
 
   body {
     max-width:1280px;

@@ -22,6 +22,7 @@ img {
 
 .wrapper {
   margin: 0 auto;
+  background-color: #e7e7e7;
 }
 
 header {
@@ -199,9 +200,10 @@ footer {
   }
   .small-description{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 40px 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr;
     border: 0;
+    gap: 1.5rem;
   }
   .small-description h2 {
     grid-row: 1;
@@ -210,38 +212,59 @@ footer {
     grid-column: 1;
     grid-row: 2;
   }
-  .small-description dl {
+  .small-description .botanical{
+    grid-row: 1;
+  }
+  .small-description .common{
     grid-row: 2;
     grid-column: 2;
+    padding: 1.5rem;
+  }
 
-  }
-  dl {
-  flex-direction: column;
-  }
+
   .cards{
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 0 auto;
-}
+  }
   .details {
-    background-color: #fff;
+    background-color: #e7e7e7;
     color: #000;
   }
   .included {
-    background-color: #fff;
+    background-color: #e7e7e7;
     color: #000;
   }
 
-.reviews {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 40px 1fr 40px;
-}
-.reviews h3 {
-  grid-row: 1;
-  grid-column: 1 / span 3;
-}
-.reviews cite {
-  grid-row: 3;
-}
+  figure img {
+    width: 150px;
+    height:150px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  figcaption {
+    font-size: 15px;
+    padding-left: 1.5rem;
+  }
+  .reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr 40px;
+    font-size: 15px;
+    gap:1.5rem;
+  }
+  .reviews h3 {
+    grid-row: 1;
+    grid-column: 1
+    margin: 0 auto;
+
+  }
+
+  .reviews cite {
+    grid-row: 3;
+  }
+
+  .reviews p {
+    grid-row: 2;
+  }
 }

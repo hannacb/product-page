@@ -200,8 +200,8 @@ footer {
   }
   .small-description{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40px 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 40px 1fr;
     border: 0;
     gap: 1.5rem;
   }
@@ -268,3 +268,8 @@ footer {
     grid-row: 2;
   }
 }
+@media only screen and (min-width:1280px){
+
+  body {
+    max-width:1280px;
+  }

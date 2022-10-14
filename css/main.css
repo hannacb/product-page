@@ -175,15 +175,20 @@ footer {
   h2 {
     font-size: 50px;
   }
-  .money-tree, .cart{
+  .money-tree{
     display:grid;
     grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
   }
   .money-tree{
     grid-column:1;
   }
   .cart{
-  display: inline-block;
+    display: block;
+    width: 100%;
+    padding: 14px 28px;
+    font-size: 16px;
+    text-align: center;
 
   }
   .description {
@@ -197,20 +202,32 @@ footer {
   .small-description{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 40px 1fr ;
     border: 0;
-    gap: 1rem;
+    gap: 1.5rem;
+    background-color: #224229;
+    color: #fff;
   }
-  .small-description h2 {
+  .small-description h3 {
     grid-row: 1;
+    grid-column: 1 / span 2;
   }
   .botanical {
-    grid-row: 1;
     grid-column:2;
   }
   .common {
-    grid-row:2;
     grid-column:2;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    line-height: 1rem;
+  }
+  .details {
+    background-color: #e7e7e7;
+  }
+  .included {
+    background-color: #e7e7e7;
   }
 }
 .paragraphs {

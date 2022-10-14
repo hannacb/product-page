@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0 auto;
-  max-width: 23em;
+  max-width: 25em;
   width: 100%;
   line-height: 1.5rem;
   /* include your font family and default line-height */
@@ -142,7 +142,6 @@ header img {
 .photogrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: .5rem;
 }
 .title {
@@ -162,7 +161,7 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width:48em){
+@media only screen and (min-width:50em){
 
   body {
     max-width:48em;
@@ -250,43 +249,45 @@ footer {
   .included h3 {
     padding:0;
   }
-}
-.paragraphs {
-  grid-column: 1;
-  grid-row: 2;
-}
 
-.photogrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 20px;
-}
-.photogrid img {
-  grid-row: 1;
-}
-.title {
-  padding: 0;
-}
-.reviews {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20px 1fr 40px;
-  gap: 1.5rem;
-}
-.reviews h3 {
-  grid-row: 1;
-  padding: 0;
-}
-.reviews p {
-  grid-row: 2;
-  font-size: 14px;
-}
-.reviews cite {
-  grid-row: 3;
-}
+
+
+  .paragraphs {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .photogrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .photogrid img {
+    grid-row: 1;
+  }
+  .title {
+    padding: 0;
+  }
+  .reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 40px;
+    gap: 1.5rem;
+  }
+  .reviews h3 {
+    grid-row: 1;
+    padding: 0;
+  }
+  .reviews p {
+    grid-row: 2;
+    font-size: 14px;
+  }
+  .reviews cite {
+    grid-row: 3;
+  }
 }
 @media only screen and (min-width:80em){
 
   body {
     max-width:1280px;
   }
+}

@@ -103,7 +103,9 @@ header img {
 
 .small-description {
   border: 10px solid #224229; /* px are fine to be used for borders */
+  border-radius: 5px;
   padding: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
 .small-description dl {
@@ -130,10 +132,12 @@ header img {
 .details{
   background-color: #58A168;
   padding: 1.5rem;
+  border-radius: 5px;
 }
 .included{
   background-color: #58A168;
   padding: 1.5rem;
+  border-radius: 5px;
 }
 .photogrid {
   display: grid;
@@ -161,8 +165,8 @@ footer {
 @media only screen and (min-width:48em){
 
   body {
-    max-width:768px;
-    min-width: 768px;
+    max-width:48em;
+    min-width: 48em;
   }
   header {
     padding: 0 1.5rem;
@@ -221,27 +225,65 @@ footer {
   .cards {
     display: flex;
     flex-direction: row;
-    line-height: 1rem;
   }
   .details {
-    background-color: #e7e7e7;
+    background-color: #e7e7e7;;
+  }
+  .flex-details {
+    display: flex;
+    align-items: center;
+    line-height: 5px;
+  }
+  .flex-details p {
+    font-size: 14px;
+  }
+  .flex-details h4 {
+    font-size: 14px;
   }
   .included {
     background-color: #e7e7e7;
+  }
+  .included ul {
+    padding: 18px;
+    line-height: 40px;
+  }
+  .included h3 {
+    padding:0;
   }
 }
 .paragraphs {
   grid-column: 1;
   grid-row: 2;
 }
+
+.photogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 20px;
 }
-.browsed {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr .2fr;
-    margin: 0 auto;
-    gap: .25rem;
-  }
+.photogrid img {
+  grid-row: 1;
+}
+.title {
+  padding: 0;
+}
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px 1fr 40px;
+  gap: 1.5rem;
+}
+.reviews h3 {
+  grid-row: 1;
+  padding: 0;
+}
+.reviews p {
+  grid-row: 2;
+  font-size: 14px;
+}
+.reviews cite {
+  grid-row: 3;
+}
 }
 @media only screen and (min-width:80em){
 

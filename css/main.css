@@ -14,6 +14,7 @@ body {
   margin: 0 auto;
   max-width: 23em;
   width: 100%;
+  line-height: 1.5rem;
   /* include your font family and default line-height */
 }
 
@@ -28,22 +29,23 @@ img {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
+  justify-content: space-between;
+
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
+  align-items: center;
 }
 
 header nav ul li a {
   color: #000;
   font-weight: bold;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: ;
 }
 
 header nav ul li a:hover,
@@ -52,15 +54,16 @@ header nav ul li a:focus {
 }
 
 header img {
-  width: 150px;
+  width: 140px;
   margin: 0 auto;
 }
 
 .photos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 1.5rem;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 auto;
 }
 
 .wooden {
@@ -72,8 +75,11 @@ header img {
   display: grid;
   align-items: center;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: .5fr 1fr;
   padding-left: 1.5rem;
+}
+.description {
+  grid-column: 1/ span 2;
 }
 
 .cart a {
@@ -90,6 +96,9 @@ header img {
   color: #fff;
   margin-bottom: 1.3rem;
 
+}
+.cart a:hover {
+  background-color: #58A168;
 }
 
 .cart {
@@ -118,25 +127,29 @@ header img {
 .paragraphs {
   grid-column: 1 / span 2;
 }
-.cards{
-  padding: 1rem;
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
 }
-.details {
-  font-size: 14px;
+.details{
+  background-color: #58A168;
+  padding: 1.5rem;
 }
-.included {
-  font-size: 14px;
+.included{
+  background-color: #58A168;
+  padding: 1.5rem;
 }
-h3 {
-  padding-left: 1.5rem;
-}
-.browsed {
-  display:grid;
+.photogrid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: .5rem;
 }
-figcaption{
-  grid-rows:2,4;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .reviews {
@@ -196,19 +209,6 @@ footer {
   grid-column: 1;
   grid-row: 2;
 }
-
-.cards{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 0 auto;
-}
-.details {
-  background-color: #e7e7e7;
-  color: #000;
-}
-.included {
-  background-color: #e7e7e7;
-  color: #000;
 }
 .browsed {
     display: grid;

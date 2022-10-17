@@ -290,4 +290,42 @@ footer {
   body {
     max-width:1280px;
   }
+  .desktoptop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:95px 150px;
+  }
+  .money-tree{
+    grid-column:2;
+    display: block;
+  }
+  .money-tree p {
+    grid-row:2;
+  }
+  .cart a {
+    grid-row:2;
+  }
+  .small-description{
+    grid-row:4;
+    background-color: #e7e7e7;
+    color: #000;
+  }
+  .photos{
+    display:grid;
+    grid-column: 1;
+    grid-row: 1 / span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+  .wooden {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 3;
+  }
+  .miniphotos {
+  display:flex;
+  gap: 1rem;
+  }
 }

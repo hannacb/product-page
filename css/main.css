@@ -102,7 +102,7 @@ header img {
 }
 
 .small-description {
-  border: 10px solid #224229; /* px are fine to be used for borders */
+  border: 10px solid #224229;
   border-radius: 5px;
   padding: 1.5em;
   margin-bottom: 1.5rem;
@@ -348,9 +348,9 @@ footer {
     width: 100%
   }
   .miniphotos {
-  display:flex;
-  gap: 1rem;
-  grid-row: 3;
+    display:flex;
+    gap: 1rem;
+    grid-row: 3;
   }
   .cards {
     justify-content: space-between;
@@ -359,6 +359,6 @@ footer {
     padding-right: 15rem;
   }
   .cards h3{
-  font-size: 1.5em;
+    font-size: 1.5em;
   }
 }

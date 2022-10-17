@@ -15,7 +15,7 @@ body {
   max-width: 25em;
   width: 100%;
   line-height: 1.5rem;
-  /* include your font family and default line-height */
+  font-family: 'Open Sans';
 }
 
 img {
@@ -293,7 +293,7 @@ footer {
   .desktoptop {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:95px 150px;
+    grid-template-rows:95px 200px;
   }
   .money-tree{
     grid-column:2;
@@ -301,14 +301,36 @@ footer {
   }
   .money-tree p {
     grid-row:2;
+    border-bottom: solid 1px #000;
   }
   .cart a {
     grid-row:2;
   }
   .small-description{
-    grid-row:4;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 2;
     background-color: #e7e7e7;
     color: #000;
+    grid-row: 3;
+  }
+  .small-description h2 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+  }
+  .paragraphs {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+  }
+  .small-description dl {
+    grid-row: 3;
+    grid-column: 1
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .common dd {
+    font-size: 12px;
   }
   .photos{
     display:grid;
@@ -316,16 +338,27 @@ footer {
     grid-row: 1 / span 6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 300px;
     gap: 1rem;
     margin: 0 auto;
   }
   .wooden {
     grid-column: 1 / span 4;
-    grid-row: 1 / span 3;
+    grid-row: 1 / span 2;
+    width: 100%
   }
   .miniphotos {
   display:flex;
   gap: 1rem;
+  grid-row: 3;
+  }
+  .cards {
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-right: 15rem;
+  }
+  .cards h3{
+  font-size: 1.5em;
   }
 }
